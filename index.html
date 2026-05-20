@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Abraham Iab — Desarrollador de Software. Portafolio profesional con proyectos y habilidades." />
+    <meta name="author" content="Abraham Iab" />
+    <meta name="theme-color" content="#0d1117" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://abrahamiab.github.io/" />
+    <meta property="og:title" content="Abraham Iab | Desarrollador de Software" />
+    <meta property="og:description"
+        content="Portafolio profesional de Abraham Iab — Full Stack Developer. Proyectos, habilidades y contacto." />
+    <meta property="og:image" content="https://abrahamiab.github.io/assets/img/og-cover.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Abraham Iab | Desarrollador de Software" />
+    <meta name="twitter:description"
+        content="Portafolio profesional de Abraham Iab — Full Stack Developer. Proyectos, habilidades y contacto." />
+    <meta name="twitter:image" content="https://abrahamiab.github.io/assets/img/og-cover.png" />
+
+    <title>Abraham Iab | Desarrollador de Software</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="alternate icon" href="assets/img/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar__inner">
+            <a href="#hero" class="navbar__logo">
+                <span class="logo-bracket">&lt;</span>abrahamiab<span class="logo-bracket">/&gt;</span>
+            </a>
+            <nav class="navbar__menu" id="navMenu" aria-label="Navegación principal">
+                <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+                <a href="#habilidades" class="nav-link">Habilidades</a>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+            <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero__bg-grid" aria-hidden="true"></div>
+        <div class="container hero__content">
+            <p class="hero__greeting" data-aos="fade-up">Hola, soy</p>
+            <h1 class="hero__name" data-aos="fade-up" data-aos-delay="100">
+                Abraham <span class="accent">Iab</span>
+            </h1>
+            <h2 class="hero__title" data-aos="fade-up" data-aos-delay="200">
+                <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+            </h2>
+            <p class="hero__desc" data-aos="fade-up" data-aos-delay="300">
+                Construyo experiencias digitales modernas, escalables y con propósito.<br />
+                Apasionado por el código limpio y las soluciones que generan impacto.
+            </p>
+            <div class="hero__actions" data-aos="fade-up" data-aos-delay="400">
+                <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+                <a href="#contacto" class="btn btn--outline">Contactar</a>
+            </div>
+            <div class="hero__socials" data-aos="fade-up" data-aos-delay="500">
+                <a href="https://github.com/abrahamiab" target="_blank" rel="noopener noreferrer" class="social-link"
+                    aria-label="GitHub">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/abrahamiab" target="_blank" rel="noopener noreferrer"
+                    class="social-link" aria-label="LinkedIn">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                </a>
+                <a href="mailto:abrahamiab@example.com" class="social-link" aria-label="Email">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.886.742-1.636 1.636-1.636h.91L12 10.09l9.455-6.269h.909A1.636 1.636 0 0 1 24 5.457z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="hero__scroll-hint" aria-hidden="true">
+            <span class="scroll-dot"></span>
+        </div>
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section class="section sobre-mi" id="sobre-mi">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">01. Sobre mí</span>
+                <h2 class="section-title">¿Quién soy?</h2>
+            </div>
+            <div class="sobre-mi__grid">
+                <div class="sobre-mi__text" data-aos="fade-right">
+                    <p>
+                        Soy un <strong>desarrollador de software</strong> apasionado por crear soluciones
+                        tecnológicas que marquen la diferencia. Me especializo en el desarrollo web moderno,
+                        con experiencia tanto en el frontend como en el backend.
+                    </p>
+                    <p>
+                        Me encanta aprender nuevas tecnologías, colaborar en equipo y afrontar retos
+                        complejos con código limpio, bien estructurado y escalable.
+                    </p>
+                    <p>
+                        Cuando no estoy programando, me gusta explorar nuevas herramientas, contribuir a
+                        proyectos open source y seguir creciendo como profesional.
+                    </p>
+                    <a href="#contacto" class="btn btn--primary" style="margin-top: 1.5rem;">Trabajemos juntos</a>
+                </div>
+                <div class="sobre-mi__card" data-aos="fade-left">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <span class="avatar-initials">AI</span>
+                        </div>
+                        <h3 class="profile-name">Abraham Iab</h3>
+                        <p class="profile-role">Full Stack Developer</p>
+                        <ul class="profile-stats">
+                            <li><span class="stat-value" data-target="3">0</span><span class="stat-label">Años de
+                                    experiencia</span></li>
+                            <li><span class="stat-value" data-target="20">0</span><span class="stat-label">Proyectos
+                                    completados</span></li>
+                            <li><span class="stat-value" data-target="10">0</span><span
+                                    class="stat-label">Tecnologías</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HABILIDADES ===== -->
+    <section class="section habilidades" id="habilidades">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">02. Habilidades</span>
+                <h2 class="section-title">Tecnologías que uso</h2>
+            </div>
+            <div class="skills__grid" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="skill-category">
+                    <h3 class="skill-category__title">Frontend</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">HTML5</span>
+                        <span class="skill-pill">CSS3</span>
+                        <span class="skill-pill">JavaScript</span>
+                        <span class="skill-pill">TypeScript</span>
+                        <span class="skill-pill">React</span>
+                        <span class="skill-pill">Vue.js</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category__title">Backend</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Node.js</span>
+                        <span class="skill-pill">Express</span>
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">REST APIs</span>
+                        <span class="skill-pill">GraphQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category__title">Base de datos</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">MySQL</span>
+                        <span class="skill-pill">PostgreSQL</span>
+                        <span class="skill-pill">MongoDB</span>
+                        <span class="skill-pill">Redis</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category__title">DevOps &amp; Herramientas</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Git</span>
+                        <span class="skill-pill">GitHub</span>
+                        <span class="skill-pill">Docker</span>
+                        <span class="skill-pill">CI/CD</span>
+                        <span class="skill-pill">Azure</span>
+                        <span class="skill-pill">Linux</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section class="section proyectos" id="proyectos">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">03. Proyectos</span>
+                <h2 class="section-title">Mi trabajo reciente</h2>
+            </div>
+
+            <div class="projects__filter" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="api">API</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+
+            <div class="projects__grid" id="projectsGrid">
+
+                <article class="project-card" data-category="web" data-aos="fade-up">
+                    <div class="project-card__header">
+                        <div class="project-card__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                                <path d="M3 9h18M9 21V9" />
+                            </svg>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Ver código"
+                                title="Ver código">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Ver demo"
+                                title="Ver demo">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">Portfolio Personal</h3>
+                    <p class="project-card__desc">Sitio web de portafolio personal construido con HTML, CSS y JavaScript
+                        vanilla, diseño responsivo y animaciones fluidas.</p>
+                    <div class="project-card__tags">
+                        <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="api" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card__header">
+                        <div class="project-card__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                            </svg>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Ver código"><svg
+                                    width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Ver demo"><svg width="18"
+                                    height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">REST API con Node.js</h3>
+                    <p class="project-card__desc">API RESTful con autenticación JWT, CRUD completo, documentación con
+                        Swagger y despliegue en contenedores Docker.</p>
+                    <div class="project-card__tags">
+                        <span class="tag">Node.js</span><span class="tag">Express</span><span
+                            class="tag">MongoDB</span><span class="tag">Docker</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card__header">
+                        <div class="project-card__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="2" y1="12" x2="22" y2="12" />
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                            </svg>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Ver código"><svg
+                                    width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Ver demo"><svg width="18"
+                                    height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">App de Gestión de Tareas</h3>
+                    <p class="project-card__desc">Aplicación web SPA con React para gestión de tareas con drag &amp;
+                        drop, filtros, etiquetas y sincronización en tiempo real.</p>
+                    <div class="project-card__tags">
+                        <span class="tag">React</span><span class="tag">TypeScript</span><span
+                            class="tag">Firebase</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="mobile" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card__header">
+                        <div class="project-card__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="5" y="2" width="14" height="20" rx="2" />
+                                <line x1="12" y1="18" x2="12.01" y2="18" />
+                            </svg>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Ver código"><svg
+                                    width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Ver demo"><svg width="18"
+                                    height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">App Mobile con React Native</h3>
+                    <p class="project-card__desc">Aplicación móvil multiplataforma (iOS/Android) con notificaciones
+                        push, autenticación biométrica y modo offline.</p>
+                    <div class="project-card__tags">
+                        <span class="tag">React Native</span><span class="tag">Expo</span><span
+                            class="tag">SQLite</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="api" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card__header">
+                        <div class="project-card__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Ver código"><svg
+                                    width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Ver demo"><svg width="18"
+                                    height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">Microservicios con Python</h3>
+                    <p class="project-card__desc">Arquitectura de microservicios con Python/FastAPI, mensajería
+                        asíncrona con RabbitMQ y monitoreo con Grafana.</p>
+                    <div class="project-card__tags">
+                        <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">RabbitMQ</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-card__header">
+                        <div class="project-card__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Ver código"><svg
+                                    width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Ver demo"><svg width="18"
+                                    height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">Dashboard Admin</h3>
+                    <p class="project-card__desc">Panel de administración con Vue.js, gráficas interactivas con
+                        Chart.js, roles de usuario y exportación de reportes en PDF/Excel.</p>
+                    <div class="project-card__tags">
+                        <span class="tag">Vue.js</span><span class="tag">Chart.js</span><span
+                            class="tag">PostgreSQL</span>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="projects__more" data-aos="fade-up">
+                <a href="https://github.com/abrahamiab" target="_blank" rel="noopener noreferrer"
+                    class="btn btn--outline">
+                    Ver más en GitHub →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="section contacto" id="contacto">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">04. Contacto</span>
+                <h2 class="section-title">¿Trabajamos juntos?</h2>
+            </div>
+            <div class="contacto__grid">
+                <div class="contacto__info" data-aos="fade-right">
+                    <p class="contacto__desc">
+                        Estoy disponible para proyectos freelance, oportunidades de empleo y
+                        colaboraciones en proyectos open source. ¡No dudes en escribirme!
+                    </p>
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <span class="contact-item__icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.886.742-1.636 1.636-1.636h.91L12 10.09l9.455-6.269h.909A1.636 1.636 0 0 1 24 5.457z" />
+                                </svg>
+                            </span>
+                            <a href="mailto:abrahamiab@example.com"
+                                class="contact-item__link">abrahamiab@example.com</a>
+                        </li>
+                        <li class="contact-item">
+                            <span class="contact-item__icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                            </span>
+                            <a href="https://github.com/abrahamiab" target="_blank" rel="noopener noreferrer"
+                                class="contact-item__link">github.com/abrahamiab</a>
+                        </li>
+                        <li class="contact-item">
+                            <span class="contact-item__icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </span>
+                            <a href="https://linkedin.com/in/abrahamiab" target="_blank" rel="noopener noreferrer"
+                                class="contact-item__link">linkedin.com/in/abrahamiab</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <form class="contacto__form" id="contactForm" novalidate data-aos="fade-left">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre" required
+                            autocomplete="name" />
+                        <span class="form-error" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com"
+                            required autocomplete="email" />
+                        <span class="form-error" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea id="message" name="message" class="form-input form-textarea"
+                            placeholder="Cuéntame sobre tu proyecto..." rows="5" required></textarea>
+                        <span class="form-error" id="messageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+                        Enviar mensaje
+                    </button>
+                    <p class="form-success" id="formSuccess" hidden>
+                        ¡Mensaje enviado! Me pondré en contacto contigo pronto.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__copy">
+                &copy; <span id="currentYear"></span> Abraham Iab — Diseñado y desarrollado con
+                <span class="heart">♥</span>
+            </p>
+            <p class="footer__credits">
+                <a href="https://github.com/abrahamiab/abrahamiab.github.io" target="_blank" rel="noopener noreferrer">
+                    Ver código fuente
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba" title="Volver arriba">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="18 15 12 9 6 15" />
+        </svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
