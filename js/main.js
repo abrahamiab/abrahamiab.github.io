@@ -2,8 +2,7 @@
    Abraham Iab — GitHub Portfolio
    main.js
    =================================================== */
-
-"use strict";
+("use strict");
 
 /* -------------------------------------------------------
    1. TYPED TEXT (Hero section)
@@ -221,6 +220,9 @@
   const form = document.getElementById("contactForm");
   const submitBtn = document.getElementById("submitBtn");
   const successMsg = document.getElementById("formSuccess");
+  const SERVICE_ID = form.dataset.service;
+  const TEMPLATE_ID = form.dataset.template;
+
   if (!form) return;
 
   const fields = {
@@ -284,17 +286,35 @@
     submitBtn.disabled = true;
     submitBtn.textContent = "Enviando…";
 
-    setTimeout(() => {
-      submitBtn.disabled = false;
-      submitBtn.textContent = "Enviar mensaje";
-      form.reset();
-      if (successMsg) {
-        successMsg.hidden = false;
-        setTimeout(() => {
-          successMsg.hidden = true;
-        }, 5000);
-      }
-    }, 1400);
+    const templateParams = {
+      from_name: fields.name.el.value.trim(),
+      from_email: fields.email.el.value.trim(),
+      message: fields.message.el.value.trim(),
+    };
+
+    emailjs
+      .send(SERVICE_ID, TEMPLATE_ID, templateParams)
+      .then(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Enviar mensaje";
+        form.reset();
+        if (successMsg) {
+          successMsg.hidden = false;
+          setTimeout(() => {
+            successMsg.hidden = true;
+          }, 5000);
+        }
+      })
+      .catch((err) => {
+        console.error("EmailJS error:", err);
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Enviar mensaje";
+        // Opcional: mostrar error al usuario
+        if (successMsg) {
+          successMsg.textContent = "Ocurrió un error. Intenta de nuevo.";
+          successMsg.hidden = false;
+        }
+      });
   });
 })();
 
